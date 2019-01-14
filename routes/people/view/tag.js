@@ -11,7 +11,7 @@ let toMatchGallery = (person) => {
   let title = `${person.fields['First Name']} | Age: ${person.fields['Age']}`;
   let subtitle = `${person.fields['Gender']} | ${person.fields['City']} | ${person.fields['Country']}`;
   if (is_person_verified) subtitle = `Verified User ✅ | ${subtitle}`;
-  
+
   let image_url = TAG_YOUR_IT_IMAGE_URL;
 
   let view_profile_url = createURL(
@@ -22,9 +22,9 @@ let toMatchGallery = (person) => {
   let view_profile_btn = createBtn(
     `View Profile|web_url|${view_profile_url}`,
   );
-  
+
   let message_btn = createBtn(
-    `Message Me|web_url|${person.fields['Messenger Link']}`,
+    `Message Me|web_url|${person.fields['Messenger Link']}&%20`,
   );
 
   let buttons = [view_profile_btn, message_btn];

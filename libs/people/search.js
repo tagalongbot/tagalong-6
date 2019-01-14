@@ -27,7 +27,7 @@ let createPeopleCards = (index) => (person) => {
   );
 
   let view_profile_url = createURL(
-    `${BASEURL}/people/view/profile`,
+    `${BASEURL}/people/view/profile?v=%20`,
     { tagged_person_messenger_id }
   );
 

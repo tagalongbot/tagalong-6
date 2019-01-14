@@ -24,7 +24,7 @@ let toMatchGallery = (person) => {
   );
 
   let message_btn = createBtn(
-    `Message Me|web_url|${person.fields['Messenger Link']}&%20`,
+    `Message Me|web_url|${person.fields['Messenger Link']}?%20`,
   );
 
   let buttons = [view_profile_btn, message_btn];

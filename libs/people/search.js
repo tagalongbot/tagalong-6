@@ -32,7 +32,7 @@ let createPeopleCards = (index) => (person) => {
   );
 
   let view_profile_btn = createBtn(
-    `View Profile|web_url|${view_profile_url}?v=%20`
+    `View Profile|web_url|${view_profile_url}&%20 `
   );
 
   let buttons = [send_tag_btn, next_profile_btn, view_profile_btn];

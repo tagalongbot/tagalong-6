@@ -20,7 +20,7 @@ let toMatchGallery = (person) => {
   );
 
   let view_profile_btn = createBtn(
-    `View Profile|web_url|${view_profile_url}`,
+    `View Profile|web_url|${view_profile_url}&%20`,
   );
 
   let message_btn = createBtn(

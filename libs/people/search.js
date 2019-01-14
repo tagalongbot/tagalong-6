@@ -27,12 +27,12 @@ let createPeopleCards = (index) => (person) => {
   );
 
   let view_profile_url = createURL(
-    `${BASEURL}/people/view/profile?%20`,
+    `${BASEURL}/people/view/profile`,
     { tagged_person_messenger_id }
   );
 
   let view_profile_btn = createBtn(
-    `View Profile|web_url|${view_profile_url}`
+    `View Profile|web_url|${view_profile_url}?%20`
   );
 
   let buttons = [send_tag_btn, next_profile_btn, view_profile_btn];
